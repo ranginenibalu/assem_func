@@ -1,0 +1,53 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             FUNC, CODE, READONLY
+    2 00000000         strcopy PROC
+    3 00000000                 EXPORT           strcopy
+    4 00000000         
+    5 00000000 F811 2B01       LDRB             R2, [R1],#1 ; Load byte and upd
+                                                            ate address.
+    6 00000004 F800 2B01       STRB             R2, [R0],#1 ; Store byte and up
+                                                            date address.
+    7 00000008 2A00            CMP              R2, #0      ; Check for null te
+                                                            rminator.
+    8 0000000A D1FE            BNE              strcopy     ; Keep going if not
+                                                            .
+    9 0000000C         
+   10 0000000C         ;    LDR R6, 
+   11 0000000C 4770            BX               lr          ; Return.
+   12 0000000E         
+   13 0000000E                 ENDP
+   14 0000000E                 END
+Command Line: --debug --xref --cpu=Cortex-M4 --apcs=interwork --depend=.\_build
+\function.d -o.\_build\function.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\In
+clude -IC:\Keil\ARM\Inc\Luminary --predefine="__MICROLIB SETA 1" --list=.\funct
+ion.lst source\function.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+FUNC 00000000
+
+Symbol: FUNC
+   Definitions
+      At line 1 in file source\function.s
+   Uses
+      None
+Comment: FUNC unused
+strcopy 00000000
+
+Symbol: strcopy
+   Definitions
+      At line 2 in file source\function.s
+   Uses
+      At line 3 in file source\function.s
+      At line 8 in file source\function.s
+
+2 symbols
+333 symbols in table

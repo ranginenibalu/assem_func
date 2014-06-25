@@ -1,0 +1,4 @@
+Dependencies for Project 'assem_from_c', Target 'assem_in_c': (DO NOT MODIFY !)
+F (.\source\main.c)(0x53AA5497)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Luminary -Drvmdk -DPART_LM4F120H5QR -o ".\_build\main.o" --omf_browse ".\_build\main.crf" --depend ".\_build\main.d")
+F (.\source\function.s)(0x53A98073)(--cpu Cortex-M4 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Luminary --list ".\function.lst" --xref -o ".\_build\function.o" --depend ".\_build\function.d")
+F (.\source\startup.s)(0x51971F3A)(--cpu Cortex-M4 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Luminary --list ".\startup.lst" --xref -o ".\_build\startup.o" --depend ".\_build\startup.d")
