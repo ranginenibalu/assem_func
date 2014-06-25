@@ -1,3 +1,21 @@
+/********************************************************************************************************************
+*
+*	Name:    function.s 
+*	Author:  Rangineni Balasubramanyam
+*	Date:    25-06-2014
+*
+*	Description: This file demonstrates the 
+*		     implementation of functions written in assebly language	
+*		     
+*		     
+*
+*      Note: This part of the code is taken from the ARM infocentrer
+*	     http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0203j/Cacjfjei.html
+*********************************************************************************************************************/  
+  
+  
+  
+  
   AREA    FUNC, CODE, READONLY
 strcopy PROC 
     EXPORT strcopy
